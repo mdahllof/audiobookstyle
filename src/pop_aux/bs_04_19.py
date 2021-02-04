@@ -3,10 +3,10 @@ import os
 import re
 
 
-META_DIR = 'C:/popcorpus/meta/'
+META_DIR = '../meta/'
+BS_CORPUS = META_DIR + 'book_data.csv'
+LISTDATA15_19 = META_DIR + 'list_positions.csv'
 CORPUS_DIR = 'C:/popcorpus/conll/'
-BS_CORPUS = META_DIR + 'book_data_201113.csv'
-LISTDATA15_19 = META_DIR + 'list_positions_201203.csv'
 
 NREGEX = r'(först|två|andra|trett|fyr|fjärd|fem|sext|sjund|' + \
          r'sjutt|ått|nio|nitt|tio|elv|elft|tolf|tolv|fjor|tjug|fört).*'
