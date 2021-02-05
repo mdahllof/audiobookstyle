@@ -1,0 +1,173 @@
+id,title,author1,author_gender,category,frmt1,frmt2,wc,slm,slsd,plm,plsd,ddm,ddsd
+SvB_BS_155,Stalker,"Kepler, Lars",2,CRIME,both,both,140165,12649,7552,18676,14257,3122,1348
+SvB_BS_156,Gone Girl,"Flynn, Gillian",F,CRIME,pb,sell,170040,14479,12554,41043,47994,3374,1610
+SvB_BS_157,Lejontämjaren,"Läckberg, Camilla",F,CRIME,hb,both,117614,12952,7770,34250,29184,3136,1400
+SvB_BS_158,VIP-rummet,"Lapidus, Jens",M,CRIME,hb,sell,134713,10163,6770,20570,21224,2934,1312
+SvB_BS_161,Sonen,"Nesbø, Jo",M,CRIME,both,sell,125944,10578,8404,26293,36812,3120,1514
+SvB_BS_163,Jag heter inte Miriam,"Axelsson, Majgull",F,OTHER,both,sell,129858,10260,10699,34491,52865,3156,1616
+SvB_BS_165,De underkända,"Hjorth, Michael",M,CRIME,hb,both,109557,10497,8120,22552,25453,3096,1483
+SvB_BS_166,Blå stjärnan,"Guillou, Jan",M,OTHER,hb,sell,122252,14880,9970,35394,28893,3351,1564
+SvB_BS_167,Det som inte dödar oss,"Lagercrantz, David",M,CRIME,both,both,143373,13855,11169,33165,38578,3278,1519
+SvB_BS_168,Bombmakaren och hans kvinna,"Persson, Leif GW",M,CRIME,hb,both,145556,13586,10222,33709,29671,3469,1778
+SvB_BS_169,Britt-Marie var här,"Backman, Fredrik",M,OTHER,both,sell,90664,10665,8545,23697,27152,3121,1530
+SvB_BS_170,Mördar-Anders och hans vänner samt en och annan ovän,"Jonasson, Jonas",M,OTHER,both,both,69271,14189,10206,32144,27232,3428,1656
+SvB_BS_171,Allt jag inte minns,"Khemiri, Jonas Hassen",M,PRESTIGE,both,sell,64349,11100,11650,30439,46119,3342,1869
+SvB_BS_172,STHLM Delete,"Lapidus, Jens",M,CRIME,both,both,135385,9156,6823,22951,23506,2886,1320
+SvB_BS_173,Det är något som inte stämmer,"Haag, Martina",F,OTHER,both,both,39048,10064,8139,32218,39293,2962,1355
+SvB_BS_174,Playground,"Kepler, Lars",2,CRIME,hb,sell,98292,12827,7895,19990,17168,3126,1346
+SvB_BS_175,Järnblod,"Marklund, Liza",F,CRIME,both,both,77900,11431,8485,19707,20250,3063,1412
+SvB_BS_176,Arvet efter dig,"Moyes, Jojo",F,OTHER,both,both,119240,11750,9897,27274,29294,3162,1495
+SvB_BS_177,Björndansen,"Roslund, Anders",M,CRIME,hb,sell,181853,9413,10123,18888,25836,3291,1848
+SvB_BS_178,Liv till varje pris,"Sandberg, Kristina",F,PRESTIGE,hb,sell,152886,12290,10699,150330,135330,3143,1479
+SvB_BS_179,Konsten att höra hjärtslag,"Sendker, Jan-Philipp",M,OTHER,pb,sell,75595,12120,8342,50397,56161,3174,1516
+SvB_BS_180,Etthundra mil,"Moyes, Jojo",F,OTHER,pb,sell,107859,11402,9337,26110,29759,3119,1473
+SvB_BS_181,Sista brevet från din älskade,"Moyes, Jojo",F,OTHER,pb,sell,123196,11902,8898,28798,29151,3119,1415
+SvB_BS_182,Visning pågår,"Sarenbrant, Sofie",F,CRIME,pb,sell,85935,12628,6828,31781,41668,3085,1323
+SvB_BS_183,Att föda ett barn,"Sandberg, Kristina",F,OTHER,pb,sell,142176,14563,17824,219747,148001,3528,1827
+SvB_BS_184,Lotus blues,"Ohlsson, Kristina",F,CRIME,pb,sell,104980,9153,5843,21424,21958,2849,1307
+SvB_BS_185,Offer utan ansikte,"Ahnhem, Stefan",M,CRIME,pb,sell,170250,12527,9151,31365,28583,3221,1500
+SvB_BS_186,Öppnas i händelse av min död,"Moriarty, Liane",F,OTHER,pb,sell,104596,11835,9989,32748,32983,3150,1487
+SvB_BS_187,Stoner,"Williams, John",M,OTHER,pb,sell,82506,17573,12204,49375,45095,3554,1686
+SvB_BS_188,I skymningen sjunger koltrasten,"Olsson, Linda",F,OTHER,pb,sell,58190,9836,6025,32220,39034,2805,1204
+SvB_BS_189,I maktens skugga,"Sten, Viveca",F,CRIME,pb,sell,94609,11263,6250,18208,13010,2952,1257
+SvB_BS_190,Jakthundarna,"Lier Horst, Jørn",M,CRIME,pb,sell,88446,11358,6981,24385,24095,3064,1387
+SvB_BS_191,Den stumma flickan,"Hjorth, Michael",M,CRIME,pb,sell,126428,10749,8358,24756,29425,3101,1485
+SvB_BS_192,Tre minuter,"Roslund, Anders",M,CRIME,hb,sell,134016,10550,10414,23590,32731,3343,1772
+SvB_BS_193,Kaninjägaren,"Kepler, Lars",2,CRIME,both,both,133957,13505,8002,18408,13361,3204,1391
+SvB_BS_194,Kan man dö två gånger?,"Persson, Leif GW",M,CRIME,both,both,128530,12806,9326,31862,28490,3324,1677
+SvB_BS_195,Äkta amerikanska jeans,"Guillou, Jan",M,OTHER,hb,sell,111124,15553,9429,41635,28693,3358,1595
+SvB_BS_196,Simma med de drunknade,"Mytting, Lars",M,OTHER,pb,sell,112316,10310,7428,28192,25071,2986,1355
+SvB_BS_197,Ljuset vi inte ser,"Doerr, Anthony",M,OTHER,pb,sell,125004,11980,11219,32292,34210,3308,1644
+SvB_BS_198,Avdelning 73,"Sarenbrant, Sofie",F,CRIME,pb,both,73973,12574,6761,32616,39092,3080,1316
+SvB_BS_199,Det andra ansiktet,"Jungstedt, Mari",F,CRIME,both,both,84595,10676,6661,33663,41361,2992,1359
+SvB_BS_200,Störst av allt,"Persson Giolito, Malin",F,CRIME,both,both,105000,13031,11234,48792,45803,3280,1582
+SvB_BS_201,Snövit ska dö,"Neuhaus, Nele",F,CRIME,pb,sell,134314,13187,8548,39239,52778,3151,1393
+SvB_BS_202,Glöm mig,"Schulman, Alex",M,OTHER,both,sell,48455,10036,7070,35629,48727,2889,1272
+SvB_BS_203,De oroliga,"Ullmann, Linn",F,PRESTIGE,hb,sell,83135,12816,13993,37081,59812,3323,1631
+SvB_BS_204,I varje ögonblick är vi fortfarande vid liv,"Malmquist, Tom",M,PRESTIGE,pb,sell,71593,12108,11529,316783,360707,3154,1500
+SvB_BS_205,Kvinna inför rätta,"Doughty, Louise",F,CRIME,pb,sell,114861,17146,13180,59544,62404,3521,1662
+SvB_BS_206,Tiggaren,"Sarenbrant, Sofie",F,CRIME,both,both,80668,13490,7334,31573,40361,3144,1369
+SvB_BS_207,Bakom din rygg,"Sarenbrant, Sofie",F,CRIME,both,both,76457,11941,6914,26211,30078,3045,1314
+SvB_BS_208,1968,"Guillou, Jan",M,OTHER,hb,sell,116281,16164,11169,38050,30145,3507,1706
+SvB_BS_209,Slutet på sommaren,"Motte, Anders de la",M,CRIME,pb,sell,97191,11236,7048,31939,28294,3076,1384
+SvB_BS_210,Arton grader minus,"Ahnhem, Stefan",M,CRIME,pb,sell,150078,15162,10826,35312,27704,3409,1601
+SvB_BS_211,Återstoden av dagen,"Ishiguro, Kazuo",M,PRESTIGE,hb,sell,74623,19322,13801,56834,74044,3742,1788
+SvB_BS_212,Ett litet liv,"Yanagihara, Hanya",F,PRESTIGE,pb,sell,297642,23262,19861,70331,71497,3902,1966
+SvB_BS_213,Hjärtats innersta röst,"Sendker, Jan-Philipp",M,OTHER,pb,sell,83828,9628,6768,25016,29961,2909,1315
+SvB_BS_214,Vänd dig inte om,"Alsterdal, Tove",F,CRIME,pb,sell,114412,14114,10114,27509,26603,3317,1601
+SvB_BS_215,De kommer att drunkna i sina mödrars tårar,"Anyuru, Johannes",M,PRESTIGE,hb,sell,62997,14519,12619,30272,29394,3520,1699
+SvB_BS_216,Björnstad,"Backman, Fredrik",M,OTHER,pb,sell,120777,11947,9593,32660,37596,3214,1533
+SvB_BS_244,Min fantastiska väninna,"Ferrante, Elena",F,OTHER,both,sell,102340,17243,13910,53136,77096,3622,1755
+SvB_BS_245,Hennes nya namn,"Ferrante, Elena",F,OTHER,hb,sell,152381,16853,14478,45719,73791,3648,1843
+SvB_BS_246,Toner i natten,"Moyes, Jojo",F,OTHER,both,both,121699,13430,9419,34801,33916,3204,1437
+SvB_BS_247,Kvinnan på tåget,"Hawkins, Paula",F,CRIME,pb,sell,102476,13084,10158,44152,42721,3194,1465
+SvB_BS_248,Det lilla bageriet på strandpromenaden,"Colgan, Jenny",F,OTHER,pb,sell,102427,12839,10077,25524,29149,3247,1534
+SvB_BS_249,Mannen som sökte sin skugga,"Lagercrantz, David",M,CRIME,hb,both,109260,11854,8657,35245,42578,3138,1486
+SvB_BS_250,Begynnelse,"Brown, Dan",M,CRIME,both,sell,137523,15177,10533,26125,21312,3447,1621
+SvB_BS_251,Häxan,"Läckberg, Camilla",F,CRIME,both,both,204490,11387,7602,26143,28610,3064,1385
+SvB_BS_252,Det förlorade barnet,"Ferrante, Elena",F,PRESTIGE,hb,sell,154070,18789,15525,60515,87637,3655,1752
+SvB_BS_253,"Den som stannar, den som går","Ferrante, Elena",F,OTHER,hb,sell,133287,17874,16136,54006,93066,3685,1877
+SvB_BS_254,Top Dogg,"Lapidus, Jens",M,CRIME,hb,both,142811,10700,8475,26156,32260,3061,1440
+SvB_BS_255,Törst,"Nesbø, Jo",M,CRIME,hb,both,150911,11070,9127,24208,35072,3196,1552
+SvB_BS_256,Never let me go,"Ishiguro, Kazuo",M,PRESTIGE,hb,sell,96583,17137,11101,66563,63002,3404,1564
+SvB_BS_257,Det förlovade landet,"Jungstedt, Mari",F,CRIME,both,both,84761,11471,7038,37924,45274,3081,1407
+SvB_BS_258,Selfies,"Adler-Olsen, Jussi",M,CRIME,hb,both,148858,14324,9933,30617,27144,3313,1541
+SvB_BS_259,Sommar på strandpromenaden,"Colgan, Jenny",F,OTHER,pb,sell,98528,12653,11050,23839,27476,3281,1624
+SvB_BS_260,Jul i det lilla bageriet på strandpromenaden,"Colgan, Jenny",F,OTHER,pb,sell,72143,12566,12224,25674,27899,3396,1874
+SvB_BS_261,Lazarus,"Kepler, Lars",2,CRIME,hb,both,128861,12721,7586,16688,12075,3131,1357
+SvB_BS_262,Till minne av en villkorslös kärlek,"Gardell, Jonas",M,OTHER,hb,sell,126927,14210,13137,28013,22195,3463,1768
+SvB_BS_263,Bränn alla mina brev,"Schulman, Alex",M,OTHER,both,both,50326,11931,8380,39878,49008,3103,1425
+SvB_BS_264,De som dödar drömmar sover aldrig,"Guillou, Jan",M,OTHER,hb,sell,125139,16920,11219,43663,34747,3568,1753
+SvB_BS_265,En andra chans,"Moyes, Jojo",F,OTHER,both,both,138807,12625,10464,33010,35423,3280,1583
+SvB_BS_266,Ett mörker mitt ibland oss,"Jungstedt, Mari",F,CRIME,both,both,71186,10918,6805,33531,38198,3013,1380
+SvB_BS_267,I fel sällskap,"Sten, Viveca",F,CRIME,hb,sell,104962,10652,6132,17576,14159,2891,1238
+SvB_BS_268,Syndabocken,"Sarenbrant, Sofie",F,CRIME,both,both,73888,10424,6335,20784,21737,2887,1237
+SvB_BS_269,En högre rättvisa,"Hjorth, Michael",M,CRIME,hb,both,114932,11547,9300,23280,26604,3199,1515
+SvB_BS_270,De vänsterhäntas förening,"Nesser, Håkan",M,CRIME,both,sell,129488,12225,9595,27163,31836,3186,1464
+SvB_BS_271,Tre timmar,"Roslund, Anders",M,CRIME,both,sell,103717,10816,10371,21927,29713,3375,1798
+SvB_BS_272,Vardagar,"Lundell, Ulf",M,OTHER,hb,sell,100766,6324,5863,8626,16139,2646,1327
+SvB_BS_273,1793,"Natt och Dag, Niklas",M,CRIME,pb,sell,111664,14120,10450,49828,56283,3386,1612
+SvB_BS_274,Den lilla bokhandeln runt hörnet,"Colgan, Jenny",F,OTHER,pb,sell,86611,13191,11730,27100,27534,3390,1765
+SvB_BS_275,Silvervägen,"Jackson, Stina",F,CRIME,pb,both,76502,10314,6163,26065,32184,2950,1315
+SvB_BS_276,Bara ett barn,"Persson Giolito, Malin",F,CRIME,pb,sell,83628,11586,8103,37518,31233,3107,1471
+SvB_BS_277,Ensam i Paris och andra historier,"Moyes, Jojo",F,OTHER,pb,sell,71294,11131,8397,26240,25408,3076,1432
+SvB_BS_278,Husdjuret,"Grebe, Camilla",F,CRIME,pb,sell,101016,10279,6850,19212,17348,2997,1380
+SvB_BS_279,Den tyska flickan,"Correa, Armando Lucas",M,OTHER,pb,sell,92560,13528,8770,40543,28353,3284,1541
+SvB_BS_280,Strandcaféet,"Diamond, Lucy",F,OTHER,pb,sell,102524,13814,9375,34813,27100,3210,1417
+SvB_BS_281,Kvinnan i fönstret,"Finn, A.J.",M,CRIME,pb,sell,95741,8853,7709,17599,18488,2845,1289
+SvB_BS_282,Blodlokan,"Boije af Gennäs, Louise",F,CRIME,pb,sell,120226,12706,8238,23472,23899,3112,1386
+SvB_BS_283,Syndafloder,"Ohlsson, Kristina",F,CRIME,pb,both,100193,9196,5804,18658,21824,2856,1321
+SvB_BS_284,Höstdåd,"Motte, Anders de la",M,CRIME,pb,sell,128113,12484,7812,31400,31224,3169,1421
+SvB_BS_285,Pappas pojke,"Schepp, Emelie",F,CRIME,pb,both,90854,9705,6398,15716,15006,2923,1329
+SvB_BS_286,Hon som måste dö,"Lagercrantz, David",M,CRIME,hb,both,93849,12748,11146,26156,31434,3223,1525
+SvB_BS_287,En bur av guld,"Läckberg, Camilla",F,CRIME,hb,both,85832,9460,6364,24516,25195,2884,1297
+SvB_BS_288,1794,"Natt och Dag, Niklas",M,CRIME,hb,sell,122960,15276,11108,48088,60309,3484,1680
+SvB_BS_289,Den andra dödssynden,"Guillou, Jan",M,OTHER,hb,sell,112033,15724,10657,34032,25191,3476,1672
+SvB_BS_290,Jag ser dig,"Jungstedt, Mari",F,CRIME,hb,sell,63487,11539,7137,32309,31224,3074,1405
+SvB_BS_291,Kniv,"Nesbø, Jo",M,CRIME,hb,sell,151627,11501,9542,28772,43122,3244,1584
+SvB_BS_292,Broder Jakob,"Schepp, Emelie",F,CRIME,hb,both,92530,10768,7114,17452,16649,3038,1401
+SvB_BS_293,Löparna,"Tokarczuk, Olga",F,PRESTIGE,hb,sell,108423,16888,12148,59968,59137,3590,1734
+SvB_BS_294,Bergens stjärnor,"Moyes, Jojo",F,OTHER,hb,sell,122578,14230,11741,31822,35717,3435,1689
+SvB_BS_295,Skamvrån,"Sarenbrant, Sofie",F,CRIME,hb,both,83106,10716,6155,21217,21292,2903,1221
+SvB_BS_296,Folk med ångest,"Backman, Fredrik",M,OTHER,hb,sell,87503,11021,10630,27319,39266,3235,1612
+SvB_BS_297,I hemlighet begravd,"Sten, Viveca",F,CRIME,hb,both,92958,10234,5484,17904,12937,2817,1177
+SvB_BS_298,Hundraettåringen som tänkte att han tänkte för mycket,"Jonasson, Jonas",M,OTHER,hb,sell,93007,11276,7891,27227,24342,3133,1489
+SvB_BS_299,Jamåhonleva,"Roslund, Anders",M,CRIME,hb,sell,117227,10049,9831,22851,34068,3276,1722
+SvB_BS_300,Jag for ner till bror,"Smirniff, Karin",F,PRESTIGE,pb,sell,72438,7987,4950,22344,18442,2697,1222
+SvB_BS_301,En helt vanlig familj,"Edvardsson, Mattias",M,CRIME,pb,both,107011,9802,6766,18810,19269,2914,1344
+SvB_BS_302,Bokhandeln på Riverside Drive,"Skybäck, Frida",F,OTHER,pb,sell,122169,11600,8354,22104,22710,3113,1434
+SvB_BS_303,Tatueraren i Auschwitz,"Morris, Heather",F,OTHER,pb,sell,59435,10814,7174,27415,33804,3043,1380
+SvB_BS_304,Sommar på den lilla ön i havet,"Colgan, Jenny",F,OTHER,pb,sell,92906,11544,11161,21377,25371,3283,1700
+SvB_BS_305,Det som göms i snö,"Gerhardsen, Carin",F,CRIME,pb,both,91426,13443,8504,34976,32909,3216,1490
+SvB_BS_306,Motiv X,"Ahnhem, Stefan",M,CRIME,pb,sell,138527,14841,10676,32381,25239,3420,1629
+SvB_BS_307,Arv och miljö,"Hjorth, Vigdis",F,PRESTIGE,pb,sell,75722,21264,18877,97580,128002,3867,1952
+SvB_BS_308,På egen hand,"Keyes, Marian",M,OTHER,pb,sell,177793,12251,10260,23033,22387,3143,1446
+bstream_001,Alla kan se dig,"Jansson, Anna",F,CRIME,no,strm,82827,11118,7171,51670,52715,3005,1344
+bstream_002,"Falleri, fallera, falleralla","Gerhardsen, Carin",F,CRIME,no,strm,118136,13594,8807,36620,44543,3267,1541
+bstream_003,Hämnaren,"Buthler, Dan",M,CRIME,no,strm,99510,13397,9214,22997,20871,3287,1491
+bstream_004,Vita spår,"Schepp, Emelie",F,CRIME,no,strm,91887,9466,6509,15908,15913,2922,1343
+bstream_005,Dominodöden,"Moström, Jonas",M,CRIME,no,strm,76232,12705,7437,24316,21024,3160,1413
+bstream_006,Den gränslöse,"Adler-Olsen, Jussi",M,CRIME,no,strm,161122,13708,9840,29466,26714,3285,1556
+bstream_007,Skymningsflickan,"Wennstam, Katarina",F,CRIME,no,strm,97833,10919,7566,24144,18710,3100,1446
+bstream_008,En mörkare himmel : Gran Canaria,"Jungstedt, Mari",2,CRIME,no,strm,93228,11728,6916,32989,36922,3071,1386
+bstream_009,I sanningens namn,"Sten, Viveca",F,CRIME,no,strm,98305,10428,5755,16480,11842,2879,1232
+bstream_010,Rädslans fångar,"Jansson, Anna",F,CRIME,no,strm,90963,11280,7174,47600,49484,3015,1337
+bstream_011,Kärlek sökes,"Hjulström, Carin",F,OTHER,no,strm,109836,9749,7507,26537,28401,3013,1442
+bstream_012,Där inga ögon ser,"Öhrlund, Dag",M,CRIME,no,strm,74986,11018,7803,18732,18014,3069,1386
+bstream_013,Motvind,"Buthler, Dan",M,CRIME,no,strm,101540,12945,8994,22060,20086,3253,1484
+bstream_014,På sex meters djup,"Rudberg, Denise",F,CRIME,no,strm,70517,11220,6854,26894,37719,3025,1348
+bstream_015,Prio ett,"Schepp, Emelie",F,CRIME,no,strm,97768,9767,6524,16512,16105,2931,1338
+bstream_016,Svart stjärna - S1E1,"Ersgård, Jesper",M,OTHER,no,strm,12781,9847,6864,25820,33718,2925,1319
+bstream_017,Mordbrännaren,"Kant, Johan",M,CRIME,no,strm,86873,10579,5961,27746,31812,2935,1287
+bstream_018,Midnattsflickor,"Moström, Jonas",M,CRIME,no,strm,93854,12203,7527,24296,21474,3133,1402
+bstream_019,När livet börjar om,"Dillon, Lucy",F,OTHER,no,strm,141055,14531,11267,37796,29412,3326,1545
+bstream_020,Välkommen hem,"Schulman, Ninni",F,CRIME,no,strm,116471,11061,7083,17384,13277,2982,1325
+bstream_021,Sov du lilla videung,"Börjlind, Rolf",2,CRIME,no,strm,119996,9301,6697,19870,26892,2893,1325
+bstream_022,Den hemliga kvinnan,"Ekberg, Anna",F,CRIME,no,strm,116035,9489,6619,42833,64243,2887,1307
+bstream_023,Det du inte vet,"Jansson, Anna",F,CRIME,no,strm,86786,10693,6966,46534,46450,2967,1330
+bstream_024,Tryggare kan ingen vara,"Öhrlund, Dag",M,CRIME,no,strm,103479,11104,7972,19071,19643,3099,1397
+bstream_025,Uppståndelsen,"Buthler, Dan",M,CRIME,no,strm,88677,12774,8787,23398,21567,3237,1454
+bstream_026,De sju som såg,"Rudberg, Denise",F,CRIME,no,strm,69803,11321,6906,27203,36188,3026,1342
+bstream_027,Trogen intill döden,"Moström, Jonas",M,CRIME,no,strm,99004,12638,7966,25856,22297,3156,1409
+bstream_028,Prästens lilla flicka,"Casserfelt, Susan",F,CRIME,no,strm,91709,9775,5870,22341,20820,2856,1231
+bstream_029,Den tatuerade cirkeln,"Casserfelt, Susan",F,CRIME,no,strm,119130,10279,6832,23119,24033,2957,1322
+bstream_030,Kvinnan på bänken,"Jansson, Anna",F,CRIME,no,strm,78198,10633,6986,38731,39635,2951,1309
+bstream_031,Bakom stängda dörrar,"Paris, B.A.",F,CRIME,no,strm,83794,19114,13162,40305,48266,3593,1659
+bstream_033,5:e Moseboken,"Larsson, Christina",F,CRIME,no,strm,95128,14854,9779,38987,45271,3351,1530
+bstream_034,Nådastöten,"Larsson, Christina",F,CRIME,no,strm,89896,12651,8740,30713,28266,3222,1492
+bstream_035,Se till mig som liten är,"Öhrlund, Dag",M,CRIME,no,strm,117508,10944,8038,18673,19123,3085,1403
+bstream_036,Domaren,"Öhrlund, Dag",M,CRIME,no,strm,92297,11330,8370,18357,17845,3120,1422
+bstream_037,Hämndens pris,"Lewin, Erik",M,CRIME,no,strm,105427,13293,7462,48877,42543,3210,1463
+bstream_038,Änglabarnet,"Kant, Johan",M,CRIME,no,strm,22505,12524,6443,37076,36663,3030,1281
+bstream_039,Skuggorna ruva,"Moström, Jonas",M,CRIME,no,strm,99895,11979,7325,23672,19830,3094,1371
+bstream_040,Ondskans ansikte,"Ahlstedt, Mats",M,CRIME,no,strm,84265,11019,6094,28927,26795,2991,1340
+bstream_042,Mitt hjärta är ditt,"Jansson, Anna",F,CRIME,no,strm,91641,11037,7075,36982,35867,2991,1328
+bstream_043,Dotter saknad,"Jansson, Anna",F,CRIME,no,strm,104363,11462,7492,40514,39067,3022,1349
+bstream_044,Ingen lämnas kvar,"Öhrlund, Dag",M,CRIME,no,strm,103212,10764,7849,17646,17308,3050,1382
+bstream_045,Under nio nätter,"Rudberg, Denise",F,CRIME,no,strm,64661,11099,6764,26105,31779,3005,1316
+bstream_046,Snödrev,"Tursten, Helene",F,CRIME,no,strm,101971,10429,6070,26863,29368,2924,1280
+bstream_047,Offer 2117,"Adler-Olsen, Jussi",M,CRIME,no,strm,146203,15018,10355,31950,28866,3342,1551
+bstream_048,Sista färjan från Ystad,"Alfredsson, Karin",F,CRIME,no,strm,43119,10911,8218,24597,23093,3021,1358
+bstream_049,Trojanen,"Ahlstedt, Mats",M,CRIME,no,strm,85697,10997,6384,27397,24911,3022,1379
+bstream_050,Morden på Mörkö,"Karlsson, Samuel",M,CRIME,no,strm,89709,11197,6183,38239,43229,2991,1311
+bstream_051,Allt jag fått lära mig,"Westover, Tara",F,OTHER,no,strm,116640,15339,10187,53554,39485,3319,1489
