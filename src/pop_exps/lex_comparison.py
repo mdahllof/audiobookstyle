@@ -3,16 +3,18 @@ import re
 
 from scipy.stats import mannwhitneyu
 
-from pop_aux.bs_04_19 import METAFIELDS
-from pop_aux.exphelp import store_on_csv
-from pop_aux.termdict import TermEntry
+from expaux.bs_04_19 import METAFIELDS
+from expaux.dataformatting import TermEntry, store_on_csv
 
 ignore_feats = ['n', 'nNN', 'nJJ', 'nVB', 'tNN', 'tNN', 'tVB',
-                'ddsd', 'slsd', 'plsd']
+                'ddsd', 'slsd', 'slm', 'plsd',
+                'r_punct', 'r_advmod', 'r_case', 'r_root', 'r_det',
+                'r_amod', 'r_nmod', 'r_nmod:poss', 'r_nummod', 'r_obl',
+                'r_compound:prt', 'r_flat:name', 'r_cc', 'r_conj']
 
-abbdict1 = {'p_ma': 'sentence-terminal punctuation (pos: mad)',
-            'p_mi': 'intersentential punctuation (pos: mid)',
-            'p_pa': 'pairwise delimiter (pos: pad)'}
+abbdict1 = {'p_ma': 'sentence-terminal punctuation (mad)',
+            'p_mi': 'intersentential punctuation (mid)',
+            'p_pa': 'pairwise delimiter (pad)'}
 
 abbdict = {'hb': 'hardback',
            'pb': 'paperback',
@@ -23,6 +25,7 @@ abbdict = {'hb': 'hardback',
            'PRESTIGE': 'prestige',
            'strm_both': 'other',
            'sell_both': 'other',
+           'OTHER': 'middlebrow',
            'CRIME_OTHER': 'non-prestige',
            'PRESTIGE_OTHER': 'non-crime',
            'F': 'female',
@@ -30,11 +33,11 @@ abbdict = {'hb': 'hardback',
            'r_appos': 'appositional modifier',
            'wc': 'document length (word count)',
            'ddsd': 'dependency depth, standard deviation',
-           'ddm': 'dependency depth (mean)',
+           'ddm': '(mean) dependency depth',
            'slm': 'sentence length (mean)',
            'slsd': 'sentence length (SD)',
            'plsd': 'paragraph length (SD)',
-           'plm': 'paragraph length (mean)',
+           'plm': '(mean) paragraph length',
            'ttrNN': 'type-token ratio, nouns',
            'ttrJJ': 'type-token ratio, adjectives',
            'ttrVB': 'type-token ratio, verbs',
@@ -65,15 +68,19 @@ abbdict = {'hb': 'hardback',
            'p_jj': 'adjective',
            'p_in': 'interjection',
            'p_hd': 'interrogative/relative determiner',
+           'p_ha': 'WH-adverb',
            'p_hp': 'interrogative/relative pronoun',
+           'p_hs': 'WH-possessive',
            'p_rg': 'cardinal numeral',
            'p_kn': 'conjunction',
            'p_sn': 'subordinating conjunction',
            'p_ab': 'adverb',
+           'p_ma': 'sentence-terminal punctuation',
+           'p_mi': 'intersentential punctuation',
            'p_nn': 'noun',
            'p_pn': 'pronoun',
            'p_pc': 'participle',
-           'p_ro': 'numeral',
+           'p_ro': 'ordinal numeral',
            'p_pl': '(verb) particle',
            'p_ps': 'possessive/genitive pronoun',
            'p_vb': 'verb',
@@ -83,7 +90,7 @@ abbdict = {'hb': 'hardback',
            'r_nsubj:pass': 'passive nominal subject',
            'nVB': 'verb (first 10000)',
            'r_det': 'determiner (dependency relation)',
-           'p_dt': 'determiner (part of speech)'}
+           'p_dt': 'determiner'}
 
 
 def csv_data(csvfile):
@@ -119,10 +126,10 @@ def check_feat(book_data, metr, cmpsn):
             else:
                 v_c1 += 1
     return round((1000 * v_c0) / (v_c0 + v_c1)), len(vals0), len(vals1), \
-           v_c0, v_c1, u2s, '{:.15f}'.format(p2s)  # u2si, p2si
+           v_c0, v_c1, u2s, p2s  # u2si, p2si
 
 
-def make_comps(datacsvs, comparisons, wd):
+def make_comps(datacsvs, comparisons, wd, latexf):
     # datacsv = 'C:/popres/gram_stats/gram_relfrqs2.csv'
     comparisons_double = []
     for c in comparisons:
@@ -131,7 +138,8 @@ def make_comps(datacsvs, comparisons, wd):
     comps = []
     sel_comps = {}
     subset_sizes = {}
-    metrics_used = []
+    smallest_or = 1000
+    metrics_collected = []
     for cmpsn in comparisons_double:
         sel_comps[cmpsn] = []
     for datacsv in datacsvs:
@@ -140,26 +148,29 @@ def make_comps(datacsvs, comparisons, wd):
             for row in csvreader:
                 metrics = row[len(METAFIELDS):]
                 break
+        # ydict = first_list_year(BS_LISTPLACES)
         book_data = csv_data(datacsv)
         for metr in metrics:
-            if metr not in ignore_feats:
-                metrics_used.append(metr)
+            if metr not in ignore_feats and not re.match(r'r_.*', metr):
+                metrics_collected.append(metr)
                 for cmpsn in comparisons_double:
                     val = check_feat(book_data, metr, cmpsn)
                     subset_sizes[cmpsn] = (str(val[1]), str(val[2]))
-                    comps.append([str(val[0]), str(val[6]), metr] +
-                                 list(cmpsn) +
+                    comps.append([str(val[0]),
+                                  # '{:.15f}'.format(val[6]),
+                                  metr] + list(cmpsn) +
                                  [str(val[1]), str(val[2]), str(val[3]),
                                   str(val[4]), str(val[5])])
-                    if float(val[0]) >= 650:
-                        trow = [str(val[0]), str(val[6]), metr, str(cmpsn),
-                                str(val[1]), str(val[2])]
+                    if float(val[0]) >= 645: # and val[6] < 0.05:
+                        smallest_or = min(float(val[0]), smallest_or)
+                        trow = [str(val[0]), '{:.15f}'.format(val[6]),
+                                metr, str(cmpsn), str(val[1]), str(val[2])]
                         sel_comps[cmpsn].append(TermEntry(trow, float(val[0])))
-    store_on_csv(wd + 'all_comparisons.csv', comps)
-    table_latex(comparisons_double, sel_comps, subset_sizes,
-                wd + 'appendix1.tex')
-    store_on_csv(wd + 'metrics_used.csv',
-                 [[m] for m in metrics_used])
+    store_on_csv(wd + 'cont_feats.csv', comps)
+    table_latex(comparisons_double, sel_comps, subset_sizes, wd + latexf)
+    print(smallest_or)
+    store_on_csv(wd + 'metrics_collected.csv',
+                 [[m] for m in metrics_collected])
 
 
 def table_latex(comparisons, sel_comps, subset_sizes, filem):
@@ -169,11 +180,11 @@ def table_latex(comparisons, sel_comps, subset_sizes, filem):
         op.write('\\setmainfont{Arial}\n\n')
         op.write('\\begin{document}\n\n')
         op.write('\\noindent  Karl Berglund \\& Mats Dahllöf ' +
-                 '\\hfill February 2021\n\n')
+                 '\\hfill June 2021\n\n')
         op.write('\\noindent  \\textbf{Audiobook stylistics: Book format ' +
                  'comparisons between print and audio in the ' +
                  'bestselling segment}\n\n')
-        op.write('\\section*{Appendix 1: Outranking comparison tables}\n\n')
+        op.write('\\section*{Appendix 1: CLES comparison tables}\n\n')
         for cmpsn in comparisons:
             (n1, n2) = subset_sizes[cmpsn]
             cc = abbdict[cmpsn[1]] + ' (' + n1 + ') vs ' + \
@@ -183,11 +194,12 @@ def table_latex(comparisons, sel_comps, subset_sizes, filem):
             cc = cc[0:1].upper() + cc[1:]
             op.write('\\subsection*{' + cc + '}\n')
             op.write('')
-            op.write('\\begin{tabular}{|lrr|}\\hline\n')
-            op.write('\\makebox[80mm][l]{\\textbf{Measure}} & ' +
-                     '\\makebox[20mm][r]{\\textbf{Outranking ratio}}' +
-                     '\\rule{0pt}{4mm} &' +
-                     '\\makebox[20mm][r]{\\textbf{p-value}} \\\\\n')
+            op.write('\\begin{tabular}{|lr|}\\hline\n')
+            op.write('\\makebox[75mm][l]{\\textbf{Feature}} & ' +
+                     '\\makebox[20mm][r]{\\textbf{CLES}}' +
+                     '\\rule{0pt}{4mm}' +
+                     # ' & \\makebox[20mm][r]{\\textbf{p-value}}' +
+                     '\\\\\n')
             sel_comps[cmpsn].sort()
             for comp in sel_comps[cmpsn]:
                 feat_row(comp.term, op)
@@ -196,22 +208,23 @@ def table_latex(comparisons, sel_comps, subset_sizes, filem):
 
 
 def feat_row(comp, op):
-    featl1 = re.sub('^p_', '(pos: ', comp[2])
+    featl1 = re.sub('^p_', '(', comp[2])
     featl2 = re.sub('^r_', '(UD: ', featl1)
     featl = re.sub('_', '\\_', featl2)
     featl += ')'
-    if featl[0] != '(':
-        featl = '(' + featl
     feat = abbdict.get(comp[2], featl) + ' ' + featl
+    if featl[0] != '(':
+        feat = abbdict.get(comp[2], featl)
     if comp[2] in abbdict1:
         feat = abbdict1[comp[2]]
     ccol = ''
-    if float(comp[1]) > 0.005:
+    if float(comp[1]) > 0.05:
         ccol = '$\\ast$\\makebox[1mm]{}'
     orperc = float(comp[0]) / 10
-    op.write(feat + ' & ' + str(orperc) + '\\% & ' +
-             ccol + '{\\footnotesize ' + '{:.2e}'.format(float(comp[1])) +
-             '} \\\\\n')
+    op.write(feat + ' & ' + str(orperc)
+             # '\\% & ' + ccol +
+             # '{\\footnotesize ' + '{:.2e}'.format(float(comp[1])) + '}'
+             + '\\\\\n')
 
 
 def make_ranked_lists(datacsvs, resdir):
@@ -223,7 +236,7 @@ def make_ranked_lists(datacsvs, resdir):
                 break
         book_data = csv_data(datacsv)
         for metr in metrics:
-            if metr not in ignore_feats:
+            if metr not in ignore_feats and not re.match(r'r_.*', metr):
                 books = []
                 for bk in book_data:
                     bkentry = [str(bk[k]) for k in METAFIELDS]

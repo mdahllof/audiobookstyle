@@ -2,10 +2,10 @@ import csv
 import re
 import statistics
 
-from pop_aux.bs_04_19 import corpus_work_list, doc_conll_struct, \
+from expaux.dataformatting import TermDict
+from expaux.bs_04_19 import work_list_conll, doc_conll_struct, \
     section_division, add_udpaths, sent_lemmas, \
     add_listcats, METAFIELDS, corpus_15_19
-from pop_aux.termdict import TermDict
 from pop_exps.lex_diversity import richness_sets
 
 POS_REGEXES = ['NN.*', 'PN.*', 'VB.*', 'AB.*', 'JJ.*', 'PP.*', 'MAD.*',
@@ -44,7 +44,7 @@ def collectcode(sent):
 
 
 def mk_corpus_check_art1(csvfile):
-    cwl = corpus_15_19(corpus_work_list())
+    cwl = corpus_15_19(work_list_conll())
     add_listcats(cwl)
     with open(csvfile, mode='w', newline='', encoding='utf-8') as csvf:
         csvwriter = csv.writer(csvf, delimiter=',', quotechar='"',
@@ -56,7 +56,7 @@ def mk_corpus_check_art1(csvfile):
 
 
 def mk_pos_relfrqs(csvfile):
-    cwl = corpus_15_19(corpus_work_list())
+    cwl = corpus_15_19(work_list_conll())
     add_listcats(cwl)
     vkeys = [re.sub(r'[^\w]', '', tagre) for tagre in POS_REGEXES]
     with open(csvfile, mode='w', newline='', encoding='utf-8') as csvf:
@@ -89,7 +89,7 @@ def mk_pos_relfrqs(csvfile):
 
 
 def mk_struct_stats(csvfile):
-    cwl = corpus_15_19(corpus_work_list())
+    cwl = corpus_15_19(work_list_conll())
     add_listcats(cwl)
     vkeys = ['wc', 'slm', 'slsd', 'plm', 'plsd', 'ddm', 'ddsd']
              # 'slloq', 'slmd', 'slupq', 'mddm', 'mddsd', 'vddm', 'vddsd'
@@ -145,7 +145,7 @@ def mk_struct_stats(csvfile):
 
 
 def mk_gram_relfrqs_aux(csvfile):
-    cwl = corpus_15_19(corpus_work_list())
+    cwl = corpus_15_19(work_list_conll())
     add_listcats(cwl)
     with open(csvfile, mode='w', newline='', encoding='utf-8') as csvf:
         csvwriter = csv.writer(csvf, delimiter=',', quotechar='"',
@@ -224,7 +224,7 @@ def read_n(parags, n):
 
 
 def mk_lexrich_stats(lemmadictcsv, csvfile):
-    cwl = corpus_15_19(corpus_work_list())
+    cwl = corpus_15_19(work_list_conll())
     add_listcats(cwl)
     common, nonrare = richness_sets(lemmadictcsv)
     vkeys = ['n', 'common', 'rare']
@@ -260,5 +260,9 @@ def mk_lexrich_stats(lemmadictcsv, csvfile):
             book_data = [str(book[k]) for k in METAFIELDS]
             cat_rel_freqs = [str(vd[k]) for k in vkeys]
             csvwriter.writerow(book_data + cat_rel_freqs)
+
+
+
+
 
 
