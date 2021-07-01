@@ -180,11 +180,10 @@ def table_latex(comparisons, sel_comps, subset_sizes, filem):
         op.write('\\setmainfont{Arial}\n\n')
         op.write('\\begin{document}\n\n')
         op.write('\\noindent  Karl Berglund \\& Mats Dahllöf ' +
-                 '\\hfill June 2021\n\n')
-        op.write('\\noindent  \\textbf{Audiobook stylistics: Book format ' +
-                 'comparisons between print and audio in the ' +
-                 'bestselling segment}\n\n')
-        op.write('\\section*{Appendix 1: CLES comparison tables}\n\n')
+                 '\\hfill July 2021\n\n')
+        op.write('\\noindent  \\textbf{Audiobook Stylistics: ' +
+                 'Comparing Print and Audio in the Bestselling Segment}\n\n')
+        op.write('\\section*{CLES comparison tables}\n\n')
         for cmpsn in comparisons:
             (n1, n2) = subset_sizes[cmpsn]
             cc = abbdict[cmpsn[1]] + ' (' + n1 + ') vs ' + \
