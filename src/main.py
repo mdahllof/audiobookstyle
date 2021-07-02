@@ -58,20 +58,6 @@ def generate_data_from_corpus(dicts_dir):
                      dicts_dir + 'lexrich_stats.csv')
 
 
-def generate_comparisons_gend(dicts_dir, res_dir):
-    comps_dir = res_dir + 'comps/'
-    comparisons = [('author_gender', 'F', 'M', '', ''),
-                   ('author_gender', 'F', 'M', 'frmt2', 'sell'),
-                   ('author_gender', 'F', 'M', 'frmt2', 'strm'),
-                   ('author_gender', 'F', 'M', 'category', 'PRESTIGE_OTHER'),
-                   ('author_gender', 'F', 'M', 'category', 'CRIME')]
-    dict_csvs = [dicts_dir + 'gram_relfrqs.csv',
-                 dicts_dir + 'lexrich_stats.csv',
-                 dicts_dir + 'struct_stats.csv']
-    # Generate the comparisons
-    make_comps(dict_csvs, comparisons, comps_dir, 'comps_gend.tex')
-
-
 def generate_comparisons(dicts_dir, res_dir):
     comps_dir = res_dir + 'comps/'
     make_dir(comps_dir)
@@ -98,5 +84,4 @@ if __name__ == '__main__':
     dictionary_dir = results_dir + 'dicts/'
     make_dir(dictionary_dir)
     # generate_data_from_corpus(dictionary_dir)  # requires corpus
-    # generate_comparisons_gend(dicts_dir, results_dir)
     generate_comparisons(dictionary_dir, results_dir)
