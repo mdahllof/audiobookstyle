@@ -2,7 +2,7 @@
 
 **Supplementary material for an article by Karl Berglund and Mats Dahllöf (Uppsala University)**
 
-Exploing differences in stylistic properties (mainly among bestsellers and beststreamers).
+Exploring differences in stylistic properties (mainly among bestsellers and beststreamers).
 
 Python code is located in `./src/` 
 
